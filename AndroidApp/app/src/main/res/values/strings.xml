@@ -1,7 +1,36 @@
 <resources>
     <string name="app_name">AndroidApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
+
+    <string name="department_name">Подразделение:</string>
+    <string name="manager">Менеджер:</string>
+    <string name="managerStartDate">Работает с:</string>
+    <string name="streetAddress">Адрес:</string>
+    <string name="postalCode">Почтовый индекс:</string>
+    <string name="city">Город:</string>
+    <string name="region">Регион:</string>
+    <string name="countEmployee">Кол-во сотрудников:</string>
+    <string name="button_ok">Ок</string>
+    <string name="button_del">Удалить</string>
+    <string name="button_edit">Изменить</string>
+    <string name="department_name_hint">Название</string>
+    <string name="manager_fio_hint">ФИО</string>
+    <string name="managerStartDate_hint">Дата вступления в должность</string>
+    <string name="streetAddress_hint">Улица, дом</string>
+    <string name="postalCode_hint">123456</string>
+    <string name="city_hint">Город</string>
+    <string name="region_hint">Край/Область</string>
+    <string name="countEmployee_hint">12</string>
+    <string name="plus_button_description">Довавить подразделение</string>
+    <string name="plus">➕</string>
+
+
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
