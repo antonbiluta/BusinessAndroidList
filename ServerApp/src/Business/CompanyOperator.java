@@ -27,4 +27,15 @@ public class CompanyOperator {
         companies.get(companyId).listOfDepartments.remove(departmentId);
     }
 
+    public void editDepartment(int companyId, int departmentId, Department newDepartment) {
+        companies.get(companyId).listOfDepartments.set(departmentId, newDepartment);
+    }
+
+    public ArrayList<Company> getCompanies() {
+        return companies;
+    }
+
+    public void setCompanies(ArrayList<Company> companies) {
+        this.companies = companies;
+    }
 }
