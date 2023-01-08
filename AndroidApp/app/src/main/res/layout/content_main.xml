@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewExams"
+        android:id="@+id/recyclerViewDepartments"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -32,7 +32,7 @@
         tools:listitem="@layout/recyclerview_item" />
 
     <TextView
-        android:id="@+id/textViewGroupName"
+        android:id="@+id/textViewCompanyName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"

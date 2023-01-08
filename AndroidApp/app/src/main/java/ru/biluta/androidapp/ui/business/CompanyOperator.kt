@@ -30,7 +30,7 @@ class CompanyOperator {
         return arrayListForReturn
     }
 
-    fun getВDepartment(indexCompany: Int, indexDepartment: Int): Department {
+    fun getDepartment(indexCompany: Int, indexDepartment: Int): Department {
         return companies[indexCompany].listOfDepartments[indexDepartment]
     }
 

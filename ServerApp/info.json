@@ -1,0 +1,95 @@
+{
+    "id": 1,
+    "companies": [
+        {
+            "name": "BilutaProd",
+            "listOfDepartments": [
+                {
+                    "nameOfDepartment": "Дизайнерская",
+                    "fioManager": "Энтони",
+                    "managerStartDate": "11.01.2020",
+                    "streetAddress": "ул. Красная, 149",
+                    "postalCode": "111111",
+                    "city": "Краснодар",
+                    "region": "Краснодарский край",
+                    "countEmployee": 25
+                },
+                {
+                    "nameOfDepartment": "Дизайнерская",
+                    "fioManager": "Энтони",
+                    "managerStartDate": "11.01.2020",
+                    "streetAddress": "ул. Красная, 149",
+                    "postalCode": "111111",
+                    "city": "Краснодар",
+                    "region": "Краснодарский край",
+                    "countEmployee": 25
+                },
+                {
+                    "nameOfDepartment": "Дизайнерская",
+                    "fioManager": "Энтони",
+                    "managerStartDate": "11.01.2020",
+                    "streetAddress": "ул. Красная, 149",
+                    "postalCode": "111111",
+                    "city": "Краснодар",
+                    "region": "Краснодарский край",
+                    "countEmployee": 25
+                },
+                {
+                    "nameOfDepartment": "Дизайнерская",
+                    "fioManager": "Энтони",
+                    "managerStartDate": "11.01.2020",
+                    "streetAddress": "ул. Красная, 149",
+                    "postalCode": "111111",
+                    "city": "Краснодар",
+                    "region": "Краснодарский край",
+                    "countEmployee": 25
+                }
+            ]
+        },
+        {
+            "name": "Studio",
+            "listOfDepartments": [
+                {
+                    "nameOfDepartment": "Дизайнерская",
+                    "fioManager": "Энтони",
+                    "managerStartDate": "11.01.2020",
+                    "streetAddress": "ул. Красная, 149",
+                    "postalCode": "111111",
+                    "city": "Краснодар",
+                    "region": "Краснодарский край",
+                    "countEmployee": 25
+                },
+                {
+                    "nameOfDepartment": "Дизайнерская",
+                    "fioManager": "Энтони",
+                    "managerStartDate": "11.01.2020",
+                    "streetAddress": "ул. Красная, 149",
+                    "postalCode": "111111",
+                    "city": "Краснодар",
+                    "region": "Краснодарский край",
+                    "countEmployee": 25
+                },
+                {
+                    "nameOfDepartment": "Дизайнерская",
+                    "fioManager": "Энтони",
+                    "managerStartDate": "11.01.2020",
+                    "streetAddress": "ул. Красная, 149",
+                    "postalCode": "111111",
+                    "city": "Краснодар",
+                    "region": "Краснодарский край",
+                    "countEmployee": 25
+                },
+                {
+                    "nameOfDepartment": "Дизайнерская",
+                    "fioManager": "Энтони",
+                    "managerStartDate": "11.01.2020",
+                    "streetAddress": "ул. Красная, 149",
+                    "postalCode": "111111",
+                    "city": "Краснодар",
+                    "region": "Краснодарский край",
+                    "countEmployee": 25
+                }
+            ]
+        }
+    ]
+}

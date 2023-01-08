@@ -16,7 +16,7 @@ public class ServerApp {
     private ServerSocket serverSocket;
     private static CompanyOperator coperator = new CompanyOperator();
     private static String toJSON;
-    private final static String filePath = "info.txt";
+    private final static String filePath = "info.json";
 
     public void start(int port) throws IOException {
         GsonBuilder gsonBuilder = new GsonBuilder();
