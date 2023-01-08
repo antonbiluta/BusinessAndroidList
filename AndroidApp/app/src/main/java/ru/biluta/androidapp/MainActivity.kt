@@ -3,6 +3,8 @@ package ru.biluta.androidapp
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.util.Log.VERBOSE
 import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
@@ -99,6 +101,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                         bundle.putString("connection", connectionStage.toString())
                         departmentDetails.arguments = bundle
                         departmentDetails.show(fragmentManager, "MyCustomDialog")
+
+                        val countEmployee: String = tempDepartment.countEmployee.toString()
+                        val text: String = "В этом подразделении числится ${countEmployee} сотрудников."
+                        val toast = Toast.makeText(
+                            applicationContext,
+                            text,
+                            Toast.LENGTH_LONG
+                        )
+                        toast.show()
                     }
 
                     override fun onItemLongClick(view: View, position: Int) {
@@ -184,6 +195,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         internal inner class Thread2Server : Runnable {
             override fun run() {
                 while (true) {
+
                     try {
                         val message = inputServer!!.readLine()
                         if (message != null)
@@ -284,7 +296,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 {
                     recyclerViewDepartments.adapter = CustomRecyclerAdapterForDepartments(
                         coperator.getDepartmentNames(currentCompanyID),
-                        coperator.getManagerFio(currentCompanyID)
+                        coperator.getStreetAddress(currentCompanyID)
                     )
                 }
             }
@@ -305,7 +317,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         invalidateOptionsMenu()
         currentCompanyID = item.itemId
         recyclerViewDepartments.adapter = CustomRecyclerAdapterForDepartments(coperator.getDepartmentNames(currentCompanyID),
-        coperator.getManagerFio(currentCompanyID))
+        coperator.getStreetAddress(currentCompanyID))
         recyclerViewDepartments.visibility = View.VISIBLE
         return true
     }
@@ -316,12 +328,26 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun sendInputSortId(sortId: Int) {
-        val toast = Toast.makeText(
-            applicationContext,
-            "ID параметра для сортировки: $sortId.",
-            Toast.LENGTH_LONG
-        )
-        toast.show()
+        var text: String = "Выбрана сортировка подразделений по "
+        when (sortId) {
+            0 -> text += "названию."
+            1 -> text += "ФИО менеджера."
+            2 -> text += "дате начала работы менеджера."
+            3 -> text += "городскому адресу."
+            4 -> text += "почтовому индексу."
+            5 -> text += "городу."
+            6 -> text += "региону."
+            7 -> text += "количеству сотрудников."
+            9 -> text = "Внимание! Изменения будут отправлены на сервер."
+        }
+        if (sortId != -1 && sortId != 8){
+            val toast = Toast.makeText(
+                applicationContext,
+                text,
+                Toast.LENGTH_LONG
+            )
+            toast.show()
+        }
         if (sortId > -1 && sortId < 8) {
             coperator.sortDepartments(currentCompanyID, sortId)
             if (connectionStage == 1) {
@@ -353,7 +379,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
         recyclerViewDepartments.adapter = CustomRecyclerAdapterForDepartments (
             coperator.getDepartmentNames(currentCompanyID),
-            coperator.getManagerFio(currentCompanyID))
+            coperator.getStreetAddress(currentCompanyID))
     }
 
     @Deprecated("Deprecated in Java")
