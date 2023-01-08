@@ -22,10 +22,10 @@ class CompanyOperator {
         return arrayListForReturn
     }
 
-    fun getManagerFio(indexCompany: Int): ArrayList<String> {
+    fun getStreetAddress(indexCompany: Int): ArrayList<String> {
         val arrayListForReturn: ArrayList<String> = ArrayList()
         for (i in companies[indexCompany].listOfDepartments) {
-            arrayListForReturn.add(i.fioManager)
+            arrayListForReturn.add(i.streetAddress)
         }
         return arrayListForReturn
     }

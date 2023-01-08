@@ -58,8 +58,12 @@ class DbHelper(
         if (result != -1L) {
             forReturn = 1000
         }
-        val cursor: Cursor = db.query(table1Name, arrayOf(col11), "$col12 = ${company.name}",
-            null, null, null, null)
+        val namec: String = company.name
+        val selection: String = "name =?"
+        val selectionArgs: Array<String> = arrayOf(company.name)
+        val cursor: Cursor = db.query(table1Name, arrayOf(col11), selection,
+            selectionArgs, null, null, null)
+
         cursor.moveToFirst()
         val index = cursor.getColumnIndex(col11)
         var companyId: Int = -10
