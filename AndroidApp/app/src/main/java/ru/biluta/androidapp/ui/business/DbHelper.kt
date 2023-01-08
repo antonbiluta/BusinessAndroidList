@@ -36,7 +36,7 @@ class DbHelper(
             "($col21 INTEGER PRIMARY KEY AUTOINCREMENT," +
             "$col22 INTEGER, $col23 TEXT, $col24 TEXT, $col25 TEXT," +
             "$col26 TEXT, $col27 INTEGER, $col28 TEXT, $col29 TEXT, $col210 INTEGER);"
-    private val dropTable2 = "DROP TALBE IF EXISTS $table2Name"
+    private val dropTable2 = "DROP TABLE IF EXISTS $table2Name"
 
     override fun onCreate(db: SQLiteDatabase?) {
         db?.execSQL(createTable1)
