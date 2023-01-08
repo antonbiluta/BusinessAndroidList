@@ -1,0 +1,170 @@
+{
+    "id": 1,
+    "companies": [
+        {
+            "name": "АО \"Тандер\"",
+            "listOfDepartments": [
+                {
+                    "nameOfDepartment": "Отдел разработки",
+                    "fioManager": "Калайджян Камо Арменович",
+                    "managerStartDate": "02.05.2019",
+                    "streetAddress": "ул. Солнечная, 140",
+                    "postalCode": 350035,
+                    "city": "Краснодар",
+                    "region": "Краснодарский край",
+                    "countEmployee": 8
+                },
+                {
+                    "nameOfDepartment": "Отдел приколов",
+                    "fioManager": "Клоун Леонид Денисович",
+                    "managerStartDate": "17.04.2021",
+                    "streetAddress": "ул.Солнечная,140",
+                    "postalCode": 350035,
+                    "city": "Краснодар",
+                    "region": "Краснодарскийкрай",
+                    "countEmployee": 2
+                },
+                {
+                    "nameOfDepartment": "Отдел кадров",
+                    "fioManager": "Варум Анжелика Михайловна",
+                    "managerStartDate": "17.08.2020",
+                    "streetAddress": "ул.Солнечная,140",
+                    "postalCode": 350035,
+                    "city": "Краснодар",
+                    "region": "Краснодарскийкрай",
+                    "countEmployee": 12
+                },
+                {
+                    "nameOfDepartment": "Отдел закупок",
+                    "fioManager": "МошенникИгорьСтепанович",
+                    "managerStartDate": "19.04.2021",
+                    "streetAddress": "ул.Солнечная,140",
+                    "postalCode": 350035,
+                    "city": "Краснодар",
+                    "region": "Краснодарскийкрай",
+                    "countEmployee": 34
+                },
+                {
+                    "nameOfDepartment": "Отдел продаж",
+                    "fioManager": "ЧестныйЕгорСтаниславович",
+                    "managerStartDate": "21.04.2021",
+                    "streetAddress": "ул.Солнечная,140",
+                    "postalCode": 350035,
+                    "city": "Краснодар",
+                    "region": "Краснодарскийкрай",
+                    "countEmployee": 40
+                }
+            ]
+        },
+        {
+            "name": "ОАОаошная ",
+            "listOfDepartments": [
+                {
+                    "nameOfDepartment": "Отдел Олег",
+                    "fioManager": "ОлеговОлегОлегович",
+                    "managerStartDate": "09.01.2016",
+                    "streetAddress": "ул.им.Олега,1",
+                    "postalCode": 100000,
+                    "city": "Олегов",
+                    "region": "Олеговскийкрай",
+                    "countEmployee": 26
+                },
+                {
+                    "nameOfDepartment": "Отдел Вероника",
+                    "fioManager": "ВерониковаВероникаВалерьевна",
+                    "managerStartDate": "17.08.2020",
+                    "streetAddress": "ул.им.Вероники,14",
+                    "postalCode": 100000,
+                    "city": "Олегов",
+                    "region": "Олеговскийкрай",
+                    "countEmployee": 12
+                },
+                {
+                    "nameOfDepartment": "Отдел Андрей",
+                    "fioManager": "АндреевАндрейАндреевич",
+                    "managerStartDate": "19.04.2021",
+                    "streetAddress": "ул.им.Андрея,10",
+                    "postalCode": 100000,
+                    "city": "Олегов",
+                    "region": "Олеговскийкрай",
+                    "countEmployee": 34
+                },
+                {
+                    "nameOfDepartment": "Отдел Никит",
+                    "fioManager": "НикитовНикитаНикитович",
+                    "managerStartDate": "21.04.2021",
+                    "streetAddress": "ул.им.Никиты,15",
+                    "postalCode": 100000,
+                    "city": "Олегов",
+                    "region": "Олеговскийкрай",
+                    "countEmployee": 40
+                },
+                {
+                    "nameOfDepartment": "Отдел заборов",
+                    "fioManager": "СантехниковИванАркадьевич",
+                    "managerStartDate": "17.04.2021",
+                    "streetAddress": "ул.Подзаборная,87",
+                    "postalCode": 100000,
+                    "city": "Олегов",
+                    "region": "Олеговскийкрай",
+                    "countEmployee": 2
+                }
+            ]
+        },
+        {
+            "name": "Здесь ваша реклама",
+            "listOfDepartments": [
+                {
+                    "nameOfDepartment": "Отдел Олег",
+                    "fioManager": "ОлеговОлегОлегович",
+                    "managerStartDate": "09.01.2016",
+                    "streetAddress": "ул.им.Олега,1",
+                    "postalCode": 100000,
+                    "city": "Олегов",
+                    "region": "Олеговскийкрай",
+                    "countEmployee": 26
+                },
+                {
+                    "nameOfDepartment": "Отдел Вероника",
+                    "fioManager": "ВерониковаВероникаВалерьевна",
+                    "managerStartDate": "17.08.2020",
+                    "streetAddress": "ул.им.Вероники,14",
+                    "postalCode": 100000,
+                    "city": "Олегов",
+                    "region": "Олеговскийкрай",
+                    "countEmployee": 12
+                },
+                {
+                    "nameOfDepartment": "Отдел Андрей",
+                    "fioManager": "АндреевАндрейАндреевич",
+                    "managerStartDate": "19.04.2021",
+                    "streetAddress": "ул.им.Андрея,10",
+                    "postalCode": 100000,
+                    "city": "Олегов",
+                    "region": "Олеговскийкрай",
+                    "countEmployee": 34
+                },
+                {
+                    "nameOfDepartment": "Отдел Никит",
+                    "fioManager": "НикитовНикитаНикитович",
+                    "managerStartDate": "21.04.2021",
+                    "streetAddress": "ул.им.Никиты,15",
+                    "postalCode": 100000,
+                    "city": "Олегов",
+                    "region": "Олеговскийкрай",
+                    "countEmployee": 40
+                },
+                {
+                    "nameOfDepartment": "Отдел заборов",
+                    "fioManager": "СантехниковИванАркадьевич",
+                    "managerStartDate": "17.04.2021",
+                    "streetAddress": "ул.Подзаборная,87",
+                    "postalCode": 100000,
+                    "city": "Олегов",
+                    "region": "Олеговскийкрай",
+                    "countEmployee": 2
+                }
+            ]
+        }
+    ]
+}
