@@ -2,6 +2,7 @@ import Business.CompanyOperator;
 import Business.Department;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.stream.JsonReader;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -10,6 +11,7 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 
 public class ServerApp {
 
@@ -21,11 +23,22 @@ public class ServerApp {
     public void start(int port) throws IOException {
         GsonBuilder gsonBuilder = new GsonBuilder();
         Gson gson = gsonBuilder.create();
+
         try {
-            toJSON = readFile(filePath, StandardCharsets.UTF_8);
+            toJSON = Files.readAllLines(Paths.get(filePath))
+                    .stream()
+                    .map(String::trim)
+                    .reduce(String::concat)
+                    .orElseThrow(FileNotFoundException::new);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println(toJSON);
+//        try {
+//            toJSON = readFile(filePath, StandardCharsets.UTF_8);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         coperator = gson.fromJson(toJSON, CompanyOperator.class);
 
         serverSocket = new ServerSocket(port);
@@ -95,7 +108,7 @@ public class ServerApp {
                         GsonBuilder gsonBuilder = new GsonBuilder();
                         Gson gson = gsonBuilder.create();
                         String[] parts = inputLine.substring(1).split("##");
-                        String[] ids = parts[0].split(",");
+                        String[] ids = parts[0].split("\\.");
                         int companyID = Integer.parseInt(ids[0]);
                         int departmentID = Integer.parseInt(ids[1]);
                         Department tempDepartment = gson.fromJson(parts[1], Department.class);
