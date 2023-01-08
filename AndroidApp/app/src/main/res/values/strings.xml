@@ -8,6 +8,7 @@
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
 
+    <string name="detail_info_about_department">Детальная информация о подразделении:</string>
     <string name="department_name">Подразделение:</string>
     <string name="manager">Менеджер:</string>
     <string name="managerStartDate">Работает с:</string>
